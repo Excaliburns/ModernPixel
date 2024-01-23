@@ -1,0 +1,21 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+}
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '3.2.2'
+    id 'io.spring.dependency-management' version '1.1.4'
+}
+
+version '1.0.0-SNAPSHOT'
+group = 'moe.krp.shared'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compileOnly(libs.lombok)
+}
